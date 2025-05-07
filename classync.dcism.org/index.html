@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <title>Welcome to Classync</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="login-leftContainer">
+        <div id="login-leftContents">
+            <img src="Resources/Logo.png" alt="">
+            <div id="Logintagline">
+                <p style="font-family: dm sans; font-weight: 500; font-size: medium;padding: 0px 40px;">A CLASSIC WAY TO STAY IN SYNC</p>
+            </div>
+            <div id="LoginWebName">
+                <p style="font-family: Poppins; font-weight: 500; font-size: 3em; padding: 0px 30px; margin: 0px;">Classync</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="login-rightContainer">
+
+        <div class="inputForm">
+        <h1 style="font-family: poppins; font-weight: 500;">Login</h1>
+        <p style= "font-size: smaller;">Sign in to continue</p>
+
+        <form action="verification.php" method="post">
+            <label for="email">EMAIL</label><br>
+            <input type="email" name="email" required/><br><br>
+            <label for="password">PASSWORD</label><br>
+            <input type="password" name="password" required/>
+
+            <p style=" font-size: x-small; text-align: right;">No account? <a href="registration.html">Register</a></p> <br>
+
+            <input type="submit" value="Login"><br><br><br><br>
+        </form>
+
+        
+        </div>
+    </div>
+</body>
+</html>

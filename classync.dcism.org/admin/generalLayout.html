@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="../style.css">
+<body>
+    <header class="header">
+        <div class="LogoContainer">
+            <button class="menu-toggle" onclick="toggleSideMenu()" style= "padding-right: 10%;">&#9776;</button>
+            <a href="#"><img src="../Resources/Logo.png" alt="Classync Logo"></a>
+            <h2>Classync</h2>
+        </div>
+        <div class="user-info">
+            <p>Admin</p>
+            <img src="../Resources/profile.png" alt="Profile">
+        </div>
+    </header>
+    
+    <div class="side-menu" id="sideMenu">
+        <a href="#" class="side-menu-item">Create Class Space</a>
+        <a href="#" class="side-menu-item">Manage Users</a>
+        <a href="#" class="side-menu-item">Class List</a>
+        <a href="../logout.php" class="side-menu-item">Logout</a>
+    </div>
+    
+    <footer class="footer-nav">
+        <a href="admin_dashboard.php" class="active">
+            <img src="../Resources/calendar.png" alt="Calendar">
+            Calendar
+        </a>
+        <a href="admin_classTask.php">
+            <img src="../Resources/classwork.png" alt="Classwork">
+            Class Reminders
+        </a>
+        <a href="admin_myNotes.php">
+            <img src="../Resources/myNotes.png" alt="My Notes">
+            My Notes
+        </a>
+    </footer>
+    
+    <script>
+        // Toggle side menu
+        function toggleSideMenu() {
+            const sideMenu = document.getElementById('sideMenu');
+            sideMenu.classList.toggle('open');
+        }
+    </script>
+</body>

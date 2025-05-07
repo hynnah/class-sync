@@ -1,0 +1,124 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+/* LEFT CONTAINER*/
+#login-leftContainer{
+    width: 60%;
+    height: 100%;  /* Full height of the viewport */
+    background-image: url('Resources/login1.jpg'); /* Path to your image */
+    background-size: cover;  /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    display: grid;
+        place-items: center;
+        align-items: center;
+    float: left;
+    
+}
+
+    #login-leftContents{
+        display: grid;
+        place-items: center;
+        align-items: center;
+        
+    }
+        #login-leftContainer img{
+            max-height: auto;
+            width: 10vw;
+            border-radius: 30%;
+            margin-bottom: 10px;
+            box-shadow: 10px 10px 15px grey;
+        }
+
+        #Logintagline{
+            max-width: max-content;
+            background-color: beige;
+            border: 1px solid;
+            margin-bottom: 10px;
+            
+        }
+
+        #LoginWebName{
+            max-width: max-content;
+            background-color: beige;
+            border: 1px solid;
+            
+        }
+/* RIGHT CONTAINER*/
+#login-rightContainer{
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: whitesmoke;
+    align-content: center;
+    display: grid;
+    place-items: center;
+}
+
+    .inputForm{
+        padding-left: 10px;
+        background-color: beige;
+        max-width: fit-content;
+        min-height: 50%;
+        text-align: center;
+        vertical-align: middle;
+        align-content: center;
+        font-family: 'DM Sans', sans-serif;
+        padding: 30px 15%;
+        border-radius: 8px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        
+        
+    }
+
+        .inputForm label{
+        float: left;
+        font-size: 15px;
+        font-weight: 500;
+        
+        
+        }
+
+        .inputForm input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .inputForm input[type="submit"]:hover {
+            background-color: #202020;
+            /*display: grid;
+            place-self: center;*/
+        }
+
+        .inputForm input[type="email"],
+        .inputForm input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'DM Sans', sans-serif;
+        }
+    @media screen and (max-width: 768px) {
+        #login-leftContainer, #login-rightContainer {
+            width: 100%;
+            float: none;
+        }
+    
+        #login-leftContainer {
+            height: 30vh;
+        }
+        
+        #login-rightContainer {
+            height: 70vh;
+        }
+        }
+        
+        

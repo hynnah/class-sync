@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Class Space</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+    html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(Resources/bg5.1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style the body but don't apply the background to it */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 500px;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1); /* Overlay effect */
+}
+    
+    h2 {
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        place-items: center;
+    }
+
+    #joinClass {
+        min-width: 200px;
+        width: 15vw;
+        border: none;
+        border-radius: 15px;
+        background-color: beige;
+        padding: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+    }
+
+    #joinClass:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        background-color: white;
+    }
+
+    #joinClass img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 8px;
+    }
+
+    #joinClass a {
+        text-decoration: none;
+        color: #222;
+        font-weight: 600;
+        display: block;
+        font-size: 1.1rem;
+        padding-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+        #container {
+            grid-template-columns: 1fr;
+        }
+        #joinClass {
+            width: 30vw;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div ID="content">
+        <h2>Select a Class Space</h2>
+        <div id="container">
+            <div id="joinClass">
+                <a href=""><img src="Resources/joinClass.png" alt=""></a>
+                Join a Class
+            </div>
+            <div id="joinClass">
+                <a href=""><img src="Resources/createClass.png" alt=""></a>
+                Create a Class
+            </div>
+        </div>
+    </div>
+</body>
+</html>

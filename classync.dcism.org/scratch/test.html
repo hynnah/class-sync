@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Button with Dropdown Logout</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Container for the profile image and dropdown */
+    .container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-align: left;
+    }
+
+    /* Profile image styling */
+    .profile-img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    /* Hover effect for profile image */
+    .profile-img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Dropdown menu styling */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 60px; /* Adjusted to position below the image */
+      left: 0;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Button styling inside dropdown */
+    .dropdown-content button {
+      padding: 8px 16px;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Hover effect for button */
+    .dropdown-content button:hover {
+      background-color: #e60000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Container holding the profile image and dropdown -->
+  <div class="container">
+    <!-- Profile image that triggers the dropdown -->
+    <img src="Resources/profile.png" alt="Profile" id="profileImage" class="profile-img">
+
+    <!-- Dropdown menu containing the logout button -->
+    <div id="dropdownContent" class="dropdown-content">
+      <button id="logoutButton">Logout</button>
+    </div>
+  </div>
+
+  <script>
+    // Accessing the profile image and dropdown content elements
+    const profileImage = document.getElementById('profileImage');
+    const dropdownContent = document.getElementById('dropdownContent');
+    const logoutButton = document.getElementById('logoutButton');
+
+    // Toggle dropdown visibility when profile image is clicked
+    profileImage.addEventListener('click', () => {
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Handle logout action when logout button is clicked
+    logoutButton.addEventListener('click', () => {
+      // Implement your logout logic here
+      sessionStorage.clear(); // Clears session storage
+      window.location.href = 'login.html'; // Redirects to the login page
+    });
+  </script>
+
+</body>
+</html>

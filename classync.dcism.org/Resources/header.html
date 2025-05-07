@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="style.css">
+<style>
+    
+/* REGISTRATION PAGE HEADER */
+.header {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Left side: Logo + Classync title */
+.LogoContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+
+/* Logo Styling */
+.header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    margin-right: 10px;
+}
+
+/* Website Title */
+.header h2 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+    color: black;
+}
+
+/* navigation */
+.nav-bar{
+    margin: 0;
+    width: fit-content;
+    height: 100%;
+    padding-right: 3%;
+    min-width: 40%;
+    float: left;
+    align-content: center;
+    
+}
+
+.nav-bar p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+.nav-bar a{
+    height: auto;
+}
+
+.search-date{
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: white;
+}
+
+</style>
+<header class="header">
+    <div class="LogoContainer">
+        <a href="#" style="padding-right: 15px;"><img src="Resources/three-line.png" alt="Sidebar"></a>
+        <a href="#"><img src="Resources/Logo.png" alt="Classync Logo"></a>
+        <h2>Classync</h2>
+    </div>
+    <div class = nav-bar>
+        <a href="#"><img src="Resources/addNote.png"  style="height: 60%;width:auto"alt=""></a>
+        
+        <div class = "search-date">
+           
+        </div>
+    </div>
+</header>
